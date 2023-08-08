@@ -1,0 +1,24 @@
+/* Write your code here: */
+
+h1, h2 {
+    color: blueviolet;
+}
+
+.box > .done {
+    color: firebrick;
+}
+
+.box li {
+    color: blue;
+}
+
+/* list elem -> with class "done", doesn't have to go 
+all the way up */
+li.done {
+    color: seagreen;
+}
+
+
+ul p.done {
+    font-size: 0.5rem;
+}
