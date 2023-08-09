@@ -6,6 +6,12 @@ body {
   flex-direction: column;
   min-height: 95vh;
 }
+
+/*add a span so we can change color of part of the title*/
+span {
+  color: darkblue;
+}
+
 .main {
   flex: 1;
 }
@@ -17,5 +23,54 @@ h1 {
 footer {
   text-align: right;
   color: midnightblue;
+  
 }
 
+/*img itself*/
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+.card {
+  width: 45%;
+}
+
+/*these classes are for divs!! aka the container */
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/*create a media query for cellphone screen*/
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    /*sets how the content of a replaced element, 
+    such as an <img> or <video>, should be resized to fit its container*/
+    object-fit: cover;
+  }
+
+}
