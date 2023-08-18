@@ -1,0 +1,27 @@
+<%- include('partials/header.ejs') %>
+
+<h1> Compose </h1>
+
+<!-- in order to post the content, must be put inside a form -->
+<!-- action is the route that will handle the submit -->
+<form class="" action="/compose" method="post"> 
+    
+    <!-- give the input a name so we can log it  -->
+    <h4>Title</h4>
+    <div class="form-group">
+        <input type="text" class="form-control" id="exampleTitle" name="postTitle">
+    </div>
+
+    <h4>Post</h4>
+    <div class="form-group">
+        <textarea type="text" class="form-control" id="exampleInput" name="postContent" cols="120" rows="10"> 
+        </textarea>
+    </div>
+    <!-- button must have the type submit st content will be submitted -->
+    <button type="submit" name="button" class="btn btn-primary"> Publish </button> 
+
+</form>
+
+
+
+<%- include('partials/footer.ejs') %>
